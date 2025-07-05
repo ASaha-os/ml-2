@@ -1,75 +1,73 @@
-MNIST Digit Classification with Random Forest
-A Comprehensive Guide to the Jupyter Notebook Implementation
+# 🧠 MNIST Classification with Random Forest
+
+A clean and efficient implementation of a **Random Forest classifier** on the **MNIST handwritten digits dataset** (0–9), achieving **~97% accuracy**. Includes confusion matrix visualizations and utilities to explore True Positive, True Negative, False Positive, and False Negative examples for any chosen digit.
+
+---
+
+## 📌 Project Highlights
+
+- ✅ **Random Forest Classification** using `scikit-learn`
+- 📊 **Confusion Matrix** plotted using `seaborn`
+- 🔍 **Per-digit analysis** of:
+  - True Positives (TP)
+  - True Negatives (TN)
+  - False Positives (FP)
+  - False Negatives (FN)
+- 📈 **~97% Accuracy** on the MNIST test set
+- 💡 Designed for learning, demonstration, and explainability
+
+---
+
+2. CLONE AND RUN
+
+⚙️ Getting Started
+
+### 1. Clone the Repository
 
 
-📌 Overview
-This Jupyter Notebook provides an end-to-end workflow for classifying handwritten digits from the MNIST dataset using a Random Forest (RF) classifier. Key features include:
+git clone https://github.com/ASaha-os/ml-2.git
+cd ml-2
 
-Exploratory Data Analysis (EDA): Visualize digit distributions and sample images.
+pip install -r requirements.txt
 
-Model Training: Optimized RF classifier achieving ~97% accuracy.
+---
 
-Evaluation: Confusion matrix, precision/recall metrics, and feature importance.
+🚀 How to Run
+Run the Random Forest classification and visualize results:
 
-Interactive Testing: User-friendly interface to test custom digit predictions.
+jupyter notebook mnist.ipynb
 
-📂 Notebook Structure
-1. Introduction
-Objective: Build a high-accuracy digit classifier without deep learning.
-
-Dataset: MNIST (70,000 grayscale images of digits 0-9).
-
-Why Random Forest?
-
-Robust to noise and overfitting.
-
-Computationally efficient for medium-sized datasets.
-
-2. Data Loading & Preprocessing
-Data Source: sklearn.datasets.fetch_openml.
-
-Normalization: Scale pixel values to [0, 1].
-
-Train-Test Split: 60,000 training samples, 10,000 test samples.
-
-Visualization: Plot 10 sample digits with labels.
+---
 
 
-3. Model Training
-Algorithm: RandomForestClassifier from scikit-learn
+🧠 Additional features:
 
-Hyperparameters:
+Choose any digit (0–9)
 
-n_estimators=100: Number of decision trees.
-random_state=42: Reproducibility.
+Retrieve and visualize example images of:
 
-Training Time: ~5-10 minutes on standard CPUs.
+True Positives (TP): Correctly predicted as digit X
 
-4. Model Evaluation
-Metrics
-Accuracy: ~97% on test data.
+True Negatives (TN): All other digits correctly not predicted as X
+
+False Positives (FP): Incorrectly predicted as X
+
+False Negatives (FN): Digit X incorrectly predicted as something else
+
+
+---
+
+🔗 Contact
+
+🌐 GitHub: ASaha-os
+
+🧠 “Understanding comes not by looking at accuracy alone, but by examining every corner of the confusion matrix.”
+
+---
 
 
 
-🛠️ Usage Instructions
-Run the Notebook:
-
-Execute cells sequentially in Jupyter.
-
-Ensure dependencies (numpy, matplotlib, scikit-learn) are installed.
-
-Test Custom Images:
-
-Use the interactive cell to input any test index (0-9,999).
-
-Export Results:
-
-Save confusion matrix/feature plots with plt.savefig().
 
 
-📜 License
-MIT © 2025 AKASH 
 
-✨ Get Started
-Open the notebook, run the cells, and explore how Random Forests interpret handwritten digits!
 
